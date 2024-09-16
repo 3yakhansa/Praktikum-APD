@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2"/>
+        <attribute name="authors" value="triya"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-16 11:46:40 AM"/>
+        <attribute name="created" value="dHJpeWE7QUNFUjsyMDI0LTA5LTE1OzA3OjI1OjQ1IFBNOzIxMjY="/>
+        <attribute name="edited" value="dHJpeWE7QUNFUjsyMDI0LTA5LTE2OzExOjQ2OjQwIEFNOzc7MjIxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="harga, berasMawar, berasSania, berasMaknyus, NIM" type="Integer" array="False" size=""/>
+            <declare name="namaLengkap" type="String" array="False" size=""/>
+            <input variable="namaLengkap"/>
+            <input variable="NIM"/>
+            <input variable="harga"/>
+            <assign variable="berasMawar" expression="(harga) - (harga)*(11/100)"/>
+            <assign variable="berasSania" expression="(harga) - (harga)*(14/100)"/>
+            <assign variable="berasMaknyus" expression="(harga) - (harga)*(17/100)"/>
+            <output expression="namaLengkap &amp; &quot; &quot; &amp; &quot;dengan NIM&quot; &amp; &quot; &quot; &amp; NIM &amp; &quot; &quot; &amp; &quot;ingin membeli beras  dengan harga&quot; &amp; &quot; &quot; &amp; harga" newline="True"/>
+            <output expression="&quot;Jika ia membeli beras Mawar ia akan membayar&quot; &amp; &quot; &quot; &amp; &quot;Rp.&quot; &amp; berasMawar &amp; &quot; &quot; &amp; &quot;setelah mendapat diskon 11%&quot;" newline="True"/>
+            <output expression="&quot;Jika ia membeli beras Sania ia akan membayar&quot; &amp; &quot; &quot; &amp; &quot;Rp.&quot; &amp; berasSania &amp; &quot; &quot; &amp; &quot;setelah mendapat diskon 14%&quot;" newline="True"/>
+            <output expression="&quot;Jika ia membeli beras Maknyus ia akan membayar&quot; &amp; &quot; &quot; &amp; &quot;Rp.&quot; &amp; berasMaknyus &amp; &quot; &quot; &amp; &quot;setelah mendapat diskon 17%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
